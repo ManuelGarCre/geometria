@@ -7,7 +7,7 @@ public class Circulo_MGC extends FiguraGeometrica_MGC {
 	public Circulo_MGC(double r, String tipoFigura) {
 		super(tipoFigura);
 		if(r < 0) {
-			Math.abs(r);
+			r = Math.abs(r);
 		}
 		radio = r;
 	}
